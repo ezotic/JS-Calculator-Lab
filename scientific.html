@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Calculator</title>
+    <link rel="stylesheet" type="text/css" href="standard.css">
+</head>
+<body>
+    <div class ="container">
+       <div class ="calculator"> 
+           <h4>#FlyEaglesFly</h4>
+            <input type ="text" id="screen" value="">
+            <div class="calculator-buttons">
+                <div>
+                    <button onclick="resetScreen()" class="symbols" id=AC >AC</button>
+                    <button onclick="clix('&#40')" class="symbols">(</button>
+                    <button onclick="clix('&#41')" class="symbols">)</button>
+                    <button onclick="clix('/')" class="symbols">&divide</button> 
+                    
+                </div>
+                <div>
+                    <button onclick="clix(7)" class="numbers" >7</button>
+                    <button onclick="clix(8)" class="numbers" >8</button>
+                    <button onclick="clix(9)" class="numbers" >9</button>
+                    <button onclick="clix('*')" class="symbols" id=Mult>X</button> 
+                </div>
+                <div>
+                    <button onclick="clix(4)" class="numbers">4</button>
+                    <button onclick="clix(5)" class="numbers">5</button>
+                    <button onclick="clix(6)" class="numbers">6</button>
+                    <button onclick="clix('+')" class="symbols">+</button> 
+                </div>
+                <div>
+                    <button onclick="clix(1)" class="numbers">1</button>
+                    <button onclick="clix(2)" class="numbers">2</button>
+                    <button onclick="clix(3)" class="numbers">3</button>
+                    <button onclick="clix('-')" class="symbols">-</button> 
+                </div> 
+                <div>
+                    <button onclick="clix(0)" class="numbers">0</button>
+                    <button onclick="clix('.')" class="symbols">.</button>
+                    <button onclick="clix('%')" class="symbols">%</button>
+                    <button onclick="eql('=')" class="symbols" id= "equalsign">=</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="standard.js"></script>
+</body>
+</html>
